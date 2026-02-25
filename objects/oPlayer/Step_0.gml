@@ -53,6 +53,7 @@ if (y > room_height or y < 0 or x > room_width or x < 0 or place_meeting(x, y, o
 
 if place_meeting(x, y, oFlag) {
 	if (room = Room5) {
+		show_message("You have completed the game... or have you")
 		room_goto(Room1)
 	} else {
 		room_goto_next()
